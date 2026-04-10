@@ -1,5 +1,6 @@
 """
 作业：assignment3 - 货币兑换程序
+GitHub仓库: https://github.com/natsu-kaze/software-testing-assignment
 B23-3 2511643 陆晓韬
 """
 CNY_TO_JPY_RATE = 20.0 
