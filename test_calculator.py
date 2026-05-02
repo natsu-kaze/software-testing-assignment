@@ -28,3 +28,9 @@ class TestCalculator(unittest.TestCase):
     def test_sqrt_assertRaises(self):
         self.assertRaises(NegativeNumberError, sqrt, -1)
         self.assertRaises(NegativeNumberError, sqrt, -100)
+
+
+if __name__ == '__main__':
+    unittest.main()
+
+    

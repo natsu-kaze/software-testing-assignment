@@ -33,3 +33,7 @@ class TestShippingCost(unittest.TestCase):
 
     def test_weight_50_01_outside(self):
         self.assertRaises(ValueError, get_shipping_cost, 50.01)
+
+
+if __name__ == '__main__':
+    unittest.main()

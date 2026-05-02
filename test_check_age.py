@@ -20,3 +20,7 @@ class TestCheckAge(unittest.TestCase):
     def test_age_above_60_elderly(self):
         self.assertEqual(check_age(61), "老年")
         self.assertEqual(check_age(100), "老年")
+
+
+if __name__ == '__main__':
+    unittest.main()
