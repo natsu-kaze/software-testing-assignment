@@ -1,3 +1,8 @@
+"""
+作业4
+GitHub仓库: https://github.com/natsu-kaze/software-testing-assignment
+B23-3 2511643 陆晓韬
+"""
 class NegativeNumberError(Exception):
     pass
 

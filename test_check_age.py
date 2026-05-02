@@ -7,7 +7,14 @@ class TestCheckAge(unittest.TestCase):
     def test_age_below_18_minor(self):
         self.assertEqual(check_age(0), "未成年")
         self.assertEqual(check_age(17), "未成年")
-        self.assertEqual(check_age(-1), "未成年")
+
+    def test_age_negative(self):
+        self.assertRaises(ValueError, check_age, -1)
+        self.assertRaises(ValueError, check_age, -100)
+
+    def test_age_too_large(self):
+        self.assertRaises(ValueError, check_age, 151)
+        self.assertRaises(ValueError, check_age, 200)
 
     def test_age_18_adult(self):
         self.assertEqual(check_age(18), "成年")
